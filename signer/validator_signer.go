@@ -11,7 +11,7 @@ import (
 	ssz "github.com/ferranbt/fastssz"
 	"github.com/google/uuid"
 
-	"github.com/bloxapp/eth2-key-manager/core"
+	"github.com/LayerZeroAnalaytics/eth2-key-manager/core"
 )
 
 // ValidatorSigner represents the behavior of the validator signer

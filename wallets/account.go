@@ -8,8 +8,8 @@ import (
 	"github.com/google/uuid"
 	"github.com/pkg/errors"
 
-	"github.com/bloxapp/eth2-key-manager/core"
-	eth1deposit "github.com/bloxapp/eth2-key-manager/eth1_deposit"
+	"github.com/LayerZeroAnalaytics/eth2-key-manager/core"
+	eth1deposit "github.com/LayerZeroAnalaytics/eth2-key-manager/eth1_deposit"
 )
 
 // HDAccount represents HD account

@@ -5,8 +5,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/bloxapp/eth2-key-manager/cli/util/printer"
-	"github.com/bloxapp/eth2-key-manager/core"
+	"github.com/LayerZeroAnalaytics/eth2-key-manager/cli/util/printer"
+	"github.com/LayerZeroAnalaytics/eth2-key-manager/core"
 )
 
 // Config contains handler functions of the CLI commands related to key-vault config.

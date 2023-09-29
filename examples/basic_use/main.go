@@ -4,9 +4,9 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	eth2keymanager "github.com/bloxapp/eth2-key-manager"
-	"github.com/bloxapp/eth2-key-manager/core"
-	"github.com/bloxapp/eth2-key-manager/stores/inmemory"
+	eth2keymanager "github.com/LayerZeroAnalaytics/eth2-key-manager"
+	"github.com/LayerZeroAnalaytics/eth2-key-manager/core"
+	"github.com/LayerZeroAnalaytics/eth2-key-manager/stores/inmemory"
 )
 
 func main() {

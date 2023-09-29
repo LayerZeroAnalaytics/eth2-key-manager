@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/bloxapp/eth2-key-manager/core"
+	"github.com/LayerZeroAnalaytics/eth2-key-manager/core"
 )
 
 func _ignoreErr(a []byte, err error) []byte {

@@ -3,8 +3,8 @@ package publickey
 import (
 	"github.com/spf13/cobra"
 
-	rootcmd "github.com/bloxapp/eth2-key-manager/cli/cmd"
-	"github.com/bloxapp/eth2-key-manager/cli/cmd/wallet/cmd/publickey/handler"
+	rootcmd "github.com/LayerZeroAnalaytics/eth2-key-manager/cli/cmd"
+	"github.com/LayerZeroAnalaytics/eth2-key-manager/cli/cmd/wallet/cmd/publickey/handler"
 )
 
 // generateCmd represents the generate public key command.
