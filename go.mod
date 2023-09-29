@@ -1,4 +1,4 @@
-module github.com/bloxapp/eth2-key-manager
+module github.com/LayerZeroAnalaytics/eth2-key-manager
 
 go 1.18
 
