@@ -18,6 +18,8 @@ func NetworkFromString(n string) Network {
 		return PyrmontNetwork
 	case string(PraterNetwork):
 		return PraterNetwork
+	case string(LZeroTestnet):
+		return LZeroTestnet
 	case string(MainNetwork):
 		return MainNetwork
 	default:
@@ -32,6 +34,8 @@ func (n Network) GenesisForkVersion() phase0.Version {
 		return phase0.Version{0, 0, 32, 9}
 	case PraterNetwork:
 		return phase0.Version{0x00, 0x00, 0x10, 0x20}
+	case LZeroTestnet:
+		return phase0.Version{0x42, 0x42, 0x42, 0x42}
 	case MainNetwork:
 		return phase0.Version{0, 0, 0, 0}
 	default:
@@ -50,6 +54,9 @@ func (n Network) GenesisValidatorsRoot() phase0.Root {
 	case MainNetwork:
 		rootBytes, _ := hex.DecodeString("4b363db94e286120d76eb905340fdd4e54bfe9f06bf33ff6cf5ad27f511bfe95")
 		copy(genValidatorsRoot[:], rootBytes)
+	case LZeroTestnet:
+		rootBytes, _ := hex.DecodeString("a09acf79c4b6d1aa1ebb65c7efa36017d256b2bfbdba227fc0ba89d8359a5cc7")
+		copy(genValidatorsRoot[:], rootBytes)
 	default:
 		logrus.WithField("network", n).Fatal("undefined network")
 	}
@@ -63,6 +70,8 @@ func (n Network) DepositContractAddress() string {
 		return "0x8c5fecdC472E27Bc447696F431E425D02dd46a8c"
 	case PraterNetwork:
 		return "0xff50ed3d0ec03ac01d4c79aad74928bff48a7b2b"
+	case LZeroTestnet:
+		return "0x4242424242424242424242424242424242424242"
 	case MainNetwork:
 		return "0x00000000219ab540356cBB839Cbe05303d7705Fa"
 	default:
@@ -133,6 +142,8 @@ const (
 
 	// PraterNetwork represents the Prater test network.
 	PraterNetwork Network = "prater"
+
+	LZeroTestnet Network = "lzero"
 
 	// MainNetwork represents the main network.
 	MainNetwork Network = "mainnet"
